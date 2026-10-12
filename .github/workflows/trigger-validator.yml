@@ -1,0 +1,15 @@
+# On every push of the deploy state, ask the platform repo's validator workflow to run NOW (GitHub cron alone is best-effort and can lag
+# by tens of minutes). This only triggers; all validation and every commit happens in the platform repo's own code.
+# Secret PLATFORM_DISPATCH_TOKEN: fine-grained PAT, repository = egouilliard-leyton/mainloop-k8s-platform ONLY, permission Actions: write.
+name: trigger-validator
+on:
+  push: {branches: [main]}
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.PLATFORM_DISPATCH_TOKEN }}
+        run: |
+          [ -n "$GH_TOKEN" ] || { echo "PLATFORM_DISPATCH_TOKEN not set: relying on the platform cron"; exit 0; }
+          gh workflow run leytongo-deploy-state.yml -R egouilliard-leyton/mainloop-k8s-platform --ref main
