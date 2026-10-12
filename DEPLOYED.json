@@ -1,11 +1,11 @@
 {
   "sha": "bb14bef8c2e7ed761b87df6ee19f9b8075dd866a",
   "digests": {
-    "front": "sha256:e455b701044b7e0051a6f7cca5dfd96c75dbc6fa0c79221c74fc49f7aac17057",
-    "back": "sha256:7c8bed24532d8fe4c1a2614e0b1f33b1112cf95ebc368bf87a420d1d051326a7",
-    "macro-runner": "sha256:7775ceae6aae62275514128f0bbaf7dfec22701ba7549d23277c5ab6b5a7a6a8",
-    "worker": "sha256:9fe7148f6bf72f3e489cdd2763896171ac7194f96b2afd2c7721522ebb0702cc"
+    "back": "sha256:df85d4888c38791cca3273d0d0c89a149823b123f531c9720a291d5858c8dba6",
+    "front": "sha256:05cfb573de134a4081f61c1699c38a018cccdf12ece6097213733f9dc3139205",
+    "worker": "sha256:74533e7e4e1531b45ac19235d2949cea5de32dee2c037c698b8bddd87dac6136",
+    "macro-runner": "sha256:4566337424e92ceeaf3bf49b207291ea6a704c653ed6410255b284eeb74a11ea"
   },
-  "deployed_at": "2026-10-12T10:27:47Z",
-  "by": "cutover"
+  "deployed_at": "2026-10-12T10:38:06Z",
+  "by": "manual"
 }
