@@ -1,0 +1,11 @@
+{
+  "sha": "bb14bef8c2e7ed761b87df6ee19f9b8075dd866a",
+  "digests": {
+    "front": "sha256:e455b701044b7e0051a6f7cca5dfd96c75dbc6fa0c79221c74fc49f7aac17057",
+    "back": "sha256:7c8bed24532d8fe4c1a2614e0b1f33b1112cf95ebc368bf87a420d1d051326a7",
+    "macro-runner": "sha256:7775ceae6aae62275514128f0bbaf7dfec22701ba7549d23277c5ab6b5a7a6a8",
+    "worker": "sha256:9fe7148f6bf72f3e489cdd2763896171ac7194f96b2afd2c7721522ebb0702cc"
+  },
+  "deployed_at": "2026-10-12T10:27:47Z",
+  "by": "cutover"
+}

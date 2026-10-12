@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+  - name: ghcr.io/egouilliard-leyton/mainloop-leytongo-back
+    digest: sha256:7c8bed24532d8fe4c1a2614e0b1f33b1112cf95ebc368bf87a420d1d051326a7
+  - name: ghcr.io/egouilliard-leyton/mainloop-leytongo-front
+    digest: sha256:e455b701044b7e0051a6f7cca5dfd96c75dbc6fa0c79221c74fc49f7aac17057
+  - name: ghcr.io/egouilliard-leyton/mainloop-leytongo-macro-runner
+    digest: sha256:7775ceae6aae62275514128f0bbaf7dfec22701ba7549d23277c5ab6b5a7a6a8
+  - name: ghcr.io/egouilliard-leyton/mainloop-leytongo-worker
+    digest: sha256:9fe7148f6bf72f3e489cdd2763896171ac7194f96b2afd2c7721522ebb0702cc
+patches:
+  - target: {kind: Deployment, name: worker}
+    patch: |-
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata: {name: worker}
+      spec: {template: {spec: {containers: [{name: staging-worker, env: [{name: GIT_SHA, value: "bb14bef8"}]}]}}}
