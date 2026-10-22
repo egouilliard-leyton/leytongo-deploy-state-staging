@@ -1,11 +1,11 @@
 {
-  "sha": "8d784297e5c92d38e05bd109a74a2fcfda4c3fdc",
+  "sha": "e6e9296bac50bdc3d0f725dfc49ba2f4403ad57a",
   "digests": {
-    "back": "sha256:c05149534124cfc45ed134a869113d2d6b98dc0ab43a0953371872f914265573",
-    "front": "sha256:ce0ce8e37e5662ad5761005ea03bd8b521bd6a895ce607278a6c96adbed2e9f0",
-    "worker": "sha256:6f1f2ac1f21049d4b9943993266e4fd4947fd33c09989634fc00be35148d3a9e",
-    "macro-runner": "sha256:6e72a71602d9e194c7ea0d9a8ceb55aaab520ef5154398b8f7bc06b9da02d7a2"
+    "back": "sha256:c8db3239cd1c09b4f22b18dec705d844d5a1bf5194fe373816e07ab3a727c456",
+    "front": "sha256:07bf3e9bf58d6952c8f9c5c5057927e0a5fec3815413d583808fb4d257f16971",
+    "worker": "sha256:b5370ce8e1d6b5618777d966247b17e3b12355a1ddc2a170baec5585c1ab779e",
+    "macro-runner": "sha256:9d2520f91f9816a645441efa95b438f415bc943343d4b1e5cbd0c906453c185d"
   },
-  "deployed_at": "2026-10-22T07:49:08Z",
+  "deployed_at": "2026-10-22T13:27:34Z",
   "by": "watcher"
 }
